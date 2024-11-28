@@ -27,3 +27,20 @@ After running the code you should see this screenshot :
 - Check Cryptographic Details Button: A button that allows the user to check cryptographic information related to the selected device or connection.
 - Cryptographic Details: Displays the cryptographic details, such as encryption or security protocols in use.
 
+## Troubleshooting
+We faced the following issues :
+- Device Detection Accuracy: Some devices would appear intermittently. Therefore, we used advanced libraries to ensure all devices are consistently detected. (Resolved)
+- Encryption Protocol Check: Some lag occurred during the encryption protocol check. (Need Improvment)
+
+## Screenshots 
+The tool can detect devices :
+
+![image](https://github.com/user-attachments/assets/be37ff24-b19f-4bcc-8a67-e7f21363c292)
+
+The tool can track network traffic for the chosen device :
+
+![image](https://github.com/user-attachments/assets/8cde0abf-78f2-4a97-87e2-b3ebb068d32b)
+
+The tool can detect some cryptographic details :
+
+![image](https://github.com/user-attachments/assets/4fb0cd9b-85ae-4802-b3ec-d76a6d9e756c)
