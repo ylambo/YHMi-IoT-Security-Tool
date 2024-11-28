@@ -13,6 +13,17 @@ Simple Tool To Discover IoT Devices For Scan Security Issues
 3. Run the code
 
 ## Excution Steps
-After running the code you should see this screenshot
+After running the code you should see this screenshot :
+
 ![image](https://github.com/user-attachments/assets/ca0a00c1-03ef-4289-9b73-ccf24daddbf4)
+
+- Enter IP Range: Text box where the user can specify the IP range to scan, such as 192.168.1.0/24. This defines the network range for the device discovery process.
+- Scan for Devices Button: Button that initiates a network scan to discover devices within the specified IP range.
+- Discovered Devices Section: Displays a list of discovered devices, including their IP Address and MAC Address. The Select column might allow the user to select specific devices for further action, such as monitoring.
+- Currently Monitoring: Indicates the current status of monitoring, which in this case is "None," meaning no device is being monitored at the moment.
+- Start Monitoring: Used to start monitoring the selected device.
+- Stop Monitoring: Used to stop monitoring the selected device.
+- Real-Time Traffic: A graph that shows real-time network traffic data, such as packet sizes over time, to monitor the activity of the selected device.
+- Check Cryptographic Details Button: A button that allows the user to check cryptographic information related to the selected device or connection.
+- Cryptographic Details: Displays the cryptographic details, such as encryption or security protocols in use.
 
