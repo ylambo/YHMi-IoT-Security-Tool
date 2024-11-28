@@ -11,3 +11,8 @@ Simple Tool To Discover IoT Devices For Scan Security Issues
 2. install necessary libraries :
    (pip install Scapy , Matplotlib , PyQt5 , Nmap)
 3. Run the code
+
+## Excution Steps
+After running the code you should see this screenshot
+![image](https://github.com/user-attachments/assets/ca0a00c1-03ef-4289-9b73-ccf24daddbf4)
+
