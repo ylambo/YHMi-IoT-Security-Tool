@@ -19,19 +19,21 @@ After running the code you should see this window :
 
 
 - Enter IP Range: Text box where the user can specify the IP range to scan, such as 192.168.1.0/24. This defines the network range for the device discovery process.
-- Scan for Devices Button: Button that initiates a network scan to discover devices within the specified IP range.
-- Discovered Devices Section: Displays a list of discovered devices, including their IP Address and MAC Address. The Select column might allow the user to select specific devices for further action, such as monitoring.
-- Currently Monitoring: Indicates the current status of monitoring, which in this case is "None," meaning no device is being monitored at the moment.
-- Start Monitoring: Used to start monitoring the selected device.
-- Stop Monitoring: Used to stop monitoring the selected device.
-- Real-Time Traffic: A graph that shows real-time network traffic data, such as packet sizes over time, to monitor the activity of the selected device.
-- Check Cryptographic Details Button: A button that allows the user to check cryptographic information related to the selected device or connection.
-- Cryptographic Details: Displays the cryptographic details, such as encryption or security protocols in use.
+- Start Scan Button: Button that initiates a network scan to discover devices within the specified IP range.
+- Discovered Devices Section: Displays a list of discovered devices, including their IP Address and MAC Address. for each device you will have three buttons (Detect OS button to detect device operating system with accuracy info (%0-100) , Scan Ports button to detect open ports , Scan for Vulnerabilities button to scan device for any vulnerabilities)
 
 ## Troubleshooting
 We faced the following issues :
-- Device Detection Accuracy: Some devices would appear intermittently. Therefore, we used advanced libraries to ensure all devices are consistently detected. (Resolved)
-- Encryption Protocol Check: Some lag occurred during the encryption protocol check. (Need Improvment)
+- Device Detection Accuracy: Some devices would appear intermittently. Therefore, we used advanced libraries to ensure all devices are consistently detected (Resolved).
+- Device OS Detection : some devices OS can not be detected (Need Improvment).
+- Device Ports : somtimes not all open prots will scanned (Need Improvments).
+- Readability of Vulnerabilities Output : some vulnerabilities scan for some devices will return only hashes of running services or you may see detection errors.
 
 ## Screenshots 
-The tool can detect devices :
+The tool can detect local devices :
+
+![image](https://github.com/user-attachments/assets/8ca0dd81-0c01-470c-80f7-3e090143c99f)
+
+The tool can detect OS , open ports and vulnerabilities for chosen devices :
+
+![image](https://github.com/user-attachments/assets/293b182b-f9b4-4808-81ab-17f8294161ed)
