@@ -15,25 +15,24 @@ Simple Tool to Discover IoT Devices on Network with Some Details (OS , Open Port
 ## Excution Steps
 After running the code you should see this window :
 
-![image](https://github.com/user-attachments/assets/152b1fca-01bb-4e11-bacf-072e754acd1e)
+![image](https://github.com/user-attachments/assets/4e983de2-d23a-43c0-8263-d4e121f143c7)
+
 
 
 - Enter IP Range: Text box where the user can specify the IP range to scan, such as 192.168.1.0/24. This defines the network range for the device discovery process.
-- Start Scan Button: Button that initiates a network scan to discover devices within the specified IP range.
-- Discovered Devices Section: Displays a list of discovered devices, including their IP Address and MAC Address. for each device you will have three buttons (Detect OS button to detect device operating system with accuracy info (%0-100) , Scan Ports button to detect open ports , Scan for Vulnerabilities button to scan device for any vulnerabilities)
+- Start Scan Button: Button that initiates a network scan to discover devices within the specified IP range using Nmap or ARP.
+- Discovered Devices Section: Displays a list of discovered devices, including their IP Address, MAC Address and vendor. for each device you will have three buttons (Detect OS button to detect device operating system with accuracy info (%0-100) , Traffic button to show live network traffic for the device , Full Port Scan button to show open ports with their details and Generate Report to show complete scan report for device)
 
 ## Troubleshooting
 We faced the following issues :
 - Device Detection Accuracy: Some devices would appear intermittently. Therefore, we used advanced libraries to ensure all devices are consistently detected (Resolved).
 - Device OS Detection : some devices OS can not be detected (Need Improvment).
 - Device Ports : somtimes not all open prots will scanned (Need Improvments).
-- Readability of Vulnerabilities Output : some vulnerabilities scan for some devices will return only hashes of running services or you may see detection errors.
 
 ## Screenshots 
-The tool can detect local devices :
+The tool can detect local devices using Nmap Or ARP scan :
 
-![image](https://github.com/user-attachments/assets/8ca0dd81-0c01-470c-80f7-3e090143c99f)
+![image](https://github.com/user-attachments/assets/fdbe7503-8043-436b-9f16-af8e9efcee39)
 
-The tool can detect OS , open ports and vulnerabilities for chosen devices :
 
-![image](https://github.com/user-attachments/assets/293b182b-f9b4-4808-81ab-17f8294161ed)
+The tool can detect OS , show live traffic and generate risk assessment report for chosen devices :
