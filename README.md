@@ -35,4 +35,4 @@ The tool can detect local devices using Nmap Or ARP scan :
 ![image](https://github.com/user-attachments/assets/fdbe7503-8043-436b-9f16-af8e9efcee39)
 
 
-The tool can detect OS , show live traffic and generate risk assessment report for chosen devices :
+The tool can detect OS , show live traffic and generate risk assessment report for chosen devices.
